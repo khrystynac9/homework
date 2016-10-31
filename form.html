@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body style="color: #128312; background-color: rgba(255, 0, 0, 0.2)">
+    <form action="https://formspree.io/khrystyna@yandex.ua" method="post">
+        <fieldset >
+            <legend>Personal data</legend>
+            <label for="name">Your name:</label>
+            <input type="text" name="name" id="name" placeholder="Bob" required>
+            <br><br>
+            <label for="lname">Your lastname:</label>
+            <input type-"text" name="lname" id="lname" placeholder="Sponge"required>
+            <br><br>
+            <label for="email">Your email:</label>
+            <input type="email" name="emaik" id="email" placeholder="spongeBob@gmail.com" required>
+            <br><br>
+            <label for="height" name="height">Your height is </label>
+            <input type="range" name="height" min="140" max="240"required>
+            <br><br>
+            <label for="month">Your vacation will be in </label>
+            <input type="month" name="month"required>
+        </fieldset
+        ><br><br>
+        <fieldset>
+            <legend>Your favorite</legend>
+            <label for="car">Car</label>
+            <select name="car" required>
+                <option value="volvo">Volvo</option>
+                <option value="fiat" selected>Fiat</option>
+                <option value="bmw">BMV</option>
+            </select>
+            <br><br>
+            <label for="food">Food</label>
+            <input list="food" name="food" required>
+            <datalist id="food">
+                <option value="meat">Meat</option>
+                <option value="fish">Fish</option>
+                <option value="vegetables">Vegetables</option>
+                <option value="fruits">Fruits</option>
+            </datalist>
+            <br><br>
+            <label for="number" required>Number</label>
+            <input type="number" name="number" min="1" max="20" step="3">
+            <br><br>
+            <label for="color" required>Color</label>
+            <input type="color" name="color">
+        </fieldset>
+        <br><br>
+        <label for="comments" >Your comments:</label><br>
+        <textarea name="comments" rows="10" cols="30"></textarea>
+        <br><br>
+        <p>Your favorite animal is</p>
+        <input type="radio" name="animal" value="cat"> Cat
+        <input type="radio" name="animal" value="dog">Dog
+        <input type="radio" name="animal" value="tiger">Tiger
+        <br><br>
+        <p>Your favorite flower is</p>     
+        <input type="checkbox" name="flower" value="rose">Rose
+        <input type="checkbox" name="flower" value="tulip">Tulip
+        <input type="checkbox" name="flower" value="gorgon">Gorgon
+        <br><br>
+        <input type="submit" value="Send" style="color:red; background-color:green">
+    </form>
+</body>
